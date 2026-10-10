@@ -40,6 +40,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -123,7 +124,6 @@
               ]
             },
             "id": "1d382483-e3a5-4c81-a865-a73c2a7e34c0",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Authorization Provider",
@@ -160,6 +160,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -243,7 +244,6 @@
               ]
             },
             "id": "5eeacfc7-eb0d-40bf-9fec-ea7e85365b25",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Web Application",
@@ -280,6 +280,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -363,7 +364,6 @@
               ]
             },
             "id": "f6d135c0-6f50-42aa-a311-f3a42fb8faf4",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Browser Client",
@@ -400,6 +400,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -483,7 +484,6 @@
               ]
             },
             "id": "f41ac69e-4ed3-4a00-89fb-6bf3fe2c75e9",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "SQL Database",
@@ -524,6 +524,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -607,7 +608,6 @@
               ]
             },
             "id": "027c7299-56ba-4ef5-8b9e-0e75e201cc3a",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "LDAP",
@@ -1002,13 +1002,71 @@
             ],
             "id": "89d13ff7-0dab-489d-bb5f-2c3b50017057",
             "source": {
-              "x": 620,
-              "y": 130
+              "cell": "1d382483-e3a5-4c81-a865-a73c2a7e34c0",
+              "port": "ab7d4370-eae8-4cd3-9b0e-fdd7e52ad968"
             },
             "target": {
               "cell": "027c7299-56ba-4ef5-8b9e-0e75e201cc3a",
               "port": "7aa60474-fc80-402f-ba1e-60bd3bd27e41"
-            }
+            },
+            "vertices": [
+              {
+                "x": 760,
+                "y": 170
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Priviledge Verified",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Priviledge Verified"
+            ],
+            "id": "cb1fcffd-ec3b-4fb9-8f7a-9613ecf67f27",
+            "source": {
+              "cell": "027c7299-56ba-4ef5-8b9e-0e75e201cc3a",
+              "port": "7aa60474-fc80-402f-ba1e-60bd3bd27e41"
+            },
+            "target": {
+              "cell": "1d382483-e3a5-4c81-a865-a73c2a7e34c0",
+              "port": "ab7d4370-eae8-4cd3-9b0e-fdd7e52ad968"
+            },
+            "vertices": [
+              {
+                "x": 760,
+                "y": 100
+              }
+            ]
           }
         ]
       }
