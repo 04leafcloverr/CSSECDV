@@ -259,11 +259,11 @@
           {
             "position": {
               "x": 898,
-              "y": 190
+              "y": 200
             },
             "size": {
-              "width": 180,
-              "height": 110
+              "width": 170,
+              "height": 100
             },
             "attrs": {
               "text": {
