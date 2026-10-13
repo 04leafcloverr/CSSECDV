@@ -21,8 +21,8 @@
         "cells": [
           {
             "position": {
-              "x": 50,
-              "y": 200
+              "x": 10,
+              "y": 240
             },
             "size": {
               "width": 112.5,
@@ -40,6 +40,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -123,7 +124,6 @@
               ]
             },
             "id": "a771c011-7a7a-4cf6-a6cb-c379e1fb61d0",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Barista",
@@ -138,8 +138,8 @@
           },
           {
             "position": {
-              "x": 266,
-              "y": 155
+              "x": 406,
+              "y": 195
             },
             "size": {
               "width": 160,
@@ -157,6 +157,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -240,7 +241,6 @@
               ]
             },
             "id": "034360df-41d7-4519-aac8-77d57523417a",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Web Application Server",
@@ -258,8 +258,8 @@
           },
           {
             "position": {
-              "x": 528,
-              "y": 200
+              "x": 898,
+              "y": 240
             },
             "size": {
               "width": 120,
@@ -280,6 +280,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -363,7 +364,6 @@
               ]
             },
             "id": "70e841a4-46f4-4881-bbd4-f9d1113f6c73",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB Database",
