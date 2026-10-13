@@ -1984,7 +1984,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Processed Sales Data Sent",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1998,12 +1998,12 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Processed Sales Data Sent"
             ],
             "id": "034e748d-e376-49e2-b18a-a127614a8e1e",
             "source": {
-              "x": 550,
-              "y": 130
+              "cell": "bb1a5737-1a90-45f7-8caa-69b3df509761",
+              "port": "17fe7224-b242-4ff2-ab2e-a709a860b1c5"
             },
             "target": {
               "cell": "e37ee324-47c6-4a56-a691-7701aef72f54",
@@ -2011,7 +2011,11 @@
             },
             "vertices": [
               {
-                "x": 210,
+                "x": 420,
+                "y": 110
+              },
+              {
+                "x": 200,
                 "y": 130
               }
             ]
