@@ -1708,7 +1708,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "User Credentials",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1722,7 +1722,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "User Credentials"
             ],
             "id": "19078966-4e0b-437a-b98c-5b805b317c41",
             "source": {
@@ -1732,7 +1732,125 @@
             "target": {
               "cell": "bb1a5737-1a90-45f7-8caa-69b3df509761",
               "port": "50a3770e-26a6-4a11-86c8-9abf54d39e7d"
-            }
+            },
+            "vertices": [
+              {
+                "x": 200,
+                "y": 380
+              },
+              {
+                "x": 460,
+                "y": 380
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User Authenticated and Authorized",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "User Authenticated and Authorized"
+            ],
+            "id": "032db44f-a654-4505-b519-57c19a5da8ac",
+            "source": {
+              "x": 490,
+              "y": 270
+            },
+            "target": {
+              "cell": "e37ee324-47c6-4a56-a691-7701aef72f54",
+              "port": "6bdec610-151a-429e-8de5-893ccf84a6b7"
+            },
+            "vertices": [
+              {
+                "x": 420,
+                "y": 300
+              },
+              {
+                "x": 200,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Request to View Basic Sales Reports",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Request to View Basic Sales Reports"
+            ],
+            "id": "3285c4ec-ef14-4ae3-95e1-67844812b50a",
+            "source": {
+              "x": 175,
+              "y": 214
+            },
+            "target": {
+              "cell": "bb1a5737-1a90-45f7-8caa-69b3df509761",
+              "port": "e1f02dcd-9840-4573-bc7b-e12158e737d3"
+            },
+            "vertices": [
+              {
+                "x": 320,
+                "y": 214
+              }
+            ]
           }
         ]
       }
