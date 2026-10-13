@@ -770,62 +770,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "User Credentials",
-              "description": "Barista logs into staff interface",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "User Credentials"
-            ],
-            "id": "5bc818c2-d431-4efd-9ef9-9cb9e2787b19",
-            "source": {
-              "cell": "a771c011-7a7a-4cf6-a6cb-c379e1fb61d0",
-              "port": "db0ee86d-88c7-48fb-a0a3-0e1161ada12c"
-            },
-            "target": {
-              "cell": "034360df-41d7-4519-aac8-77d57523417a",
-              "port": "0f416d63-910a-47dd-9dec-6a8c9f026a39"
-            },
-            "vertices": [
-              {
-                "x": 140,
-                "y": 380
-              },
-              {
-                "x": 330,
-                "y": 380
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "User is Authenticated and Authorized",
               "description": "",
               "outOfScope": false,
@@ -861,6 +805,72 @@
                 "y": 340
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User Credentials",
+              "description": "Barista logs into staff interface",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "User Credentials"
+            ],
+            "id": "5bc818c2-d431-4efd-9ef9-9cb9e2787b19",
+            "source": {
+              "cell": "a771c011-7a7a-4cf6-a6cb-c379e1fb61d0",
+              "port": "db0ee86d-88c7-48fb-a0a3-0e1161ada12c"
+            },
+            "target": {
+              "cell": "034360df-41d7-4519-aac8-77d57523417a",
+              "port": "0f416d63-910a-47dd-9dec-6a8c9f026a39"
+            },
+            "vertices": [
+              {
+                "x": 140,
+                "y": 380
+              },
+              {
+                "x": 330,
+                "y": 380
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
