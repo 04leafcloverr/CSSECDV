@@ -1872,7 +1872,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Query for Aggregated Sales Data",
+              "name": "Requested Sales Data Retrieved",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1886,25 +1886,25 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Query for Aggregated Sales Data"
+              "Requested Sales Data Retrieved"
             ],
-            "id": "3933157d-9295-4d42-aa4a-a968caa39c52",
+            "id": "c0f92d7d-797d-405e-a976-27e350fc53b0",
             "source": {
-              "x": 600,
-              "y": 270
+              "cell": "91594151-9f62-4da8-a0f1-c1b2b4495a75",
+              "port": "aee8f90c-a3b7-4b10-b3a3-a530805b5e21"
             },
             "target": {
-              "cell": "91594151-9f62-4da8-a0f1-c1b2b4495a75",
-              "port": "a342b1ee-2916-4a05-982c-4e1c35243fe4"
+              "x": 600,
+              "y": 160
             },
             "vertices": [
               {
-                "x": 720,
-                "y": 330
+                "x": 910,
+                "y": 120
               },
               {
-                "x": 930,
-                "y": 330
+                "x": 710,
+                "y": 120
               }
             ]
           },
@@ -1928,7 +1928,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Requested Sales Data Retrieved",
+              "name": "Query for Aggregated Sales Data",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1942,17 +1942,79 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Requested Sales Data Retrieved"
+              "Query for Aggregated Sales Data"
             ],
-            "id": "c0f92d7d-797d-405e-a976-27e350fc53b0",
+            "id": "3933157d-9295-4d42-aa4a-a968caa39c52",
             "source": {
-              "x": 960,
-              "y": 240
+              "x": 600,
+              "y": 260
             },
             "target": {
-              "cell": "bb1a5737-1a90-45f7-8caa-69b3df509761",
-              "port": "b6d6fdef-fd07-4979-8e2f-1956dbf714f1"
-            }
+              "cell": "91594151-9f62-4da8-a0f1-c1b2b4495a75",
+              "port": "a342b1ee-2916-4a05-982c-4e1c35243fe4"
+            },
+            "vertices": [
+              {
+                "x": 700,
+                "y": 310
+              },
+              {
+                "x": 920,
+                "y": 310
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "034e748d-e376-49e2-b18a-a127614a8e1e",
+            "source": {
+              "x": 550,
+              "y": 130
+            },
+            "target": {
+              "cell": "e37ee324-47c6-4a56-a691-7701aef72f54",
+              "port": "1874d9f1-bf86-4e9c-acce-def8645269da"
+            },
+            "vertices": [
+              {
+                "x": 210,
+                "y": 130
+              }
+            ]
           }
         ]
       }
