@@ -244,7 +244,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Web Application Server",
-              "description": "",
+              "description": "Staff Interface",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -379,6 +379,44 @@
               "storesInventory": false,
               "threats": []
             }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 4,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "8dadadac-5b4f-4d0b-9f49-b6a25d9049f2",
+            "source": {
+              "x": 160,
+              "y": 80
+            },
+            "target": {
+              "x": 200,
+              "y": 430
+            },
+            "vertices": [
+              {
+                "x": 260,
+                "y": 120
+              },
+              {
+                "x": 310,
+                "y": 380
+              }
+            ]
           }
         ]
       }
