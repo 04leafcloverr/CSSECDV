@@ -808,7 +808,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Order Status Update Validated",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -822,7 +822,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Order Status Update Validated"
             ],
             "id": "8bd0725e-f1f2-4eec-9f34-2201e43eee82",
             "source": {
@@ -832,6 +832,62 @@
             "target": {
               "cell": "a771c011-7a7a-4cf6-a6cb-c379e1fb61d0",
               "port": "272022d7-7463-4508-a563-2e511233d5e6"
+            },
+            "vertices": [
+              {
+                "x": 410,
+                "y": 110
+              },
+              {
+                "x": 150,
+                "y": 150
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Update Order Record",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Update Order Record"
+            ],
+            "id": "48eca82a-f425-4c42-a5a1-c4e6cbcce1e4",
+            "source": {
+              "x": 560,
+              "y": 240
+            },
+            "target": {
+              "cell": "70e841a4-46f4-4881-bbd4-f9d1113f6c73",
+              "port": "232535e1-f8cb-41d1-94b4-f5b043b8f6dc"
             }
           }
         ]
